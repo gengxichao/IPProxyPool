@@ -98,7 +98,9 @@ except Exception,e:
 
 将项目目录clone到当前文件夹
 
+```
 $ git clone 
+```
 
 切换工程目录
 
@@ -111,6 +113,12 @@ $ cd IPProxyPool
 ```
 python IPProxy.py
 ```
+也可以使用docker方式运行，dockerfile在dockerfile文件夹下
+
+```
+docker run -d -p 8000 --name myIpProxy ipproxy
+```
+
 成功运行后，打印信息
 ```
 IPProxyPool----->>>>>>>>beginning
