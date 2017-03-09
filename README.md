@@ -113,9 +113,10 @@ $ cd IPProxyPool
 ```
 python IPProxy.py
 ```
-也可以使用docker方式运行，dockerfile在dockerfile文件夹下
+也可以使用docker方式运行，dockerfile在dockerfile文件夹下（由于大陆的网络原因，建议自行下载项目文件和web.py安装文件）
 
 ```
+docker build -t ipproxy:latest .
 docker run -d -p 8000 --name myIpProxy ipproxy
 ```
 
